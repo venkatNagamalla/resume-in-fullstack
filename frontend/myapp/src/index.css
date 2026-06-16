@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+*{
+    font-family: "Roboto";
+    box-sizing: border-box;
+
+}
+
+.head-font{
+    font-family: "Roboto Condensed";
+}
+
+body {
+  color: black;
+}
+
+.active{
+    color: #B500B2;
+    font-weight: bold;
+}
+
+/* B500B2  mainly used color */ 
+/* 534AB7  temp used color */
