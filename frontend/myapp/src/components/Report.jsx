@@ -181,7 +181,7 @@ const Report = () => {
               {strengths.map((s, i) => (
                 <div key={i} className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5 shrink-0"></div>
-                  <p className="text-xs text-gray-800 leading-relaxed">{s}</p>
+                  <p className="text-sm text-gray-800 leading-relaxed">{s}</p>
                 </div>
               ))}
             </div>
@@ -194,7 +194,7 @@ const Report = () => {
               {weaknesses.map((w, i) => (
                 <div key={i} className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-1.5 shrink-0"></div>
-                  <p className="text-xs text-gray-800 leading-relaxed">{w}</p>
+                  <p className="text-sm text-gray-800 leading-relaxed">{w}</p>
                 </div>
               ))}
             </div>

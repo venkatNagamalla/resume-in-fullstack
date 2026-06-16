@@ -31,10 +31,10 @@ const Headers = () => {
 
   const renderMobileView = () => (
     <div className="flex items-center md:hidden h-full justify-between">
-      <h2 className="text-[#B500B2] text-lg font-semibold head-font">
+      <h2 className="text-[#B500B2] text-xl font-semibold head-font">
         Resume In
       </h2>
-      <button className="cursor-pointer" onClick={handleSideBar}>
+      <button className="cursor-pointer text-2xl" onClick={handleSideBar}>
         {sidebar ? <IoMdClose /> : <TbMenuDeep />}
       </button>
       <nav
@@ -125,7 +125,7 @@ const Headers = () => {
   );
 
   return (
-    <header className="h-12 fixed top-0 left-0 right-0 bg-white shadow-md px-2">
+    <header className="h-12 fixed top-0 left-0 right-0 bg-white shadow-md px-3">
       {renderMobileView()}
       {renderLapTopView()}
       {logout && <div>{renderLogoutView()}</div>}

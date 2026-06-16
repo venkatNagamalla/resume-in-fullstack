@@ -90,16 +90,18 @@ const PastAnalyses = () => {
           >
             <Link
               to={`/past-analyses/${item.resumeId}`}
-              className="flex items-center gap-4 cursor-pointer"
+              className="flex items-center gap-2 justify-between cursor-pointer"
             >
               <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center shrink-0">
                 <span className="text-lg">📄</span>
               </div>
 
               <div className="flex-1">
-                <p className="text-sm font-medium text-gray-800 mb-1">
+                <p className="hidden md:flex text-sm font-medium text-gray-800 mb-1">
                   {item.fileName}
                 </p>
+                <p className="text-sm font-medium md:hidden text-gray-800 mb-1 truncate max-w-58">
+  {item.fileName}</p>
                 <p className="text-xs text-gray-600">
                   {new Date(item.createdAt).toLocaleDateString("en-US", {
                     year: "numeric",
@@ -125,7 +127,7 @@ const PastAnalyses = () => {
                 <p className="text-xs text-gray-400">/100</p>
               </div>
 
-              <span className="text-gray-300 text-lg">→</span>
+              <span className="text-gray-300 hidden md:flex text-lg">→</span>
             </Link>
           </li>
         ))}
@@ -146,7 +148,7 @@ const PastAnalyses = () => {
   };
 
   const renderHistory = () => (
-    <div className="min-h-screen mt-10 bg-gray-50 px-6 py-10">
+    <div className="min-h-screen mt-10 bg-gray-50 px-3 py-10">
       <div className="max-w-2xl mx-auto">
         <div className="mb-8">
           <h1 className="text-2xl font-semibold text-gray-900 mb-1">
