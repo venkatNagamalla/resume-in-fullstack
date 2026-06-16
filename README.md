@@ -11,6 +11,13 @@ An AI-powered resume analyzer that provides instant feedback on your resume usin
 
 ---
 
+## 🚀 Github Code 
+
+- **Frontend:** [resume-in-frontend-code](https://github.com/venkatNagamalla/resume-in-fullstack)
+- **Backend:** [resume-in-backend-code](https://github.com/venkatNagamalla/resume-in-backend)
+
+---
+
 ## ✨ Features
 
 - 🤖 **AI Analysis** — Deep resume analysis powered by Google Gemini AI
